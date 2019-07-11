@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import click
-import pandas
+import pandas as pd 
 
 @click.command()
 @click.argument('quant_sf')
