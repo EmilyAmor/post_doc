@@ -19,11 +19,11 @@ def parse_salmon_TPM_table(quant_sf, output_file):
           transcripts_larger_2TPM.append(t1.iloc[i, 0])
 
   # write contig names that have TPM > 2  to txt file
-    f = open(output_file, "w")
-    for i in transcripts_larger_2TPM:
-        f.write(i + '\n')
+  f = open(output_file, "w")
+  for i in transcripts_larger_2TPM:
+      f.write(i + '\n')
 
-    f.close()
+  f.close()
 
 if __name__ == '__main__':
-      count_contigs()
+      parse_salmon_TPM_table()
